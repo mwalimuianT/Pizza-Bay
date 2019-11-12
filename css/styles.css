@@ -21,8 +21,9 @@
   }
 
    
-  #add-more-pizza {
-    
+  h2, h3 {
+    text-decoration: underline;
+    font-weight: 100px;
   }
   
   body {
