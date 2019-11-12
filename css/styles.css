@@ -1,6 +1,6 @@
 .jumbotron {
     margin-bottom: 0px;
-        background-image: url("pizza.jpg");
+        
         background-position: 0% 25%;
         background-size: cover;
         background-repeat: no-repeat;
@@ -10,7 +10,12 @@
   
   h1 {
     font-family: monospace;
-  
+  }
+
+  h2 {
+      margin-bottom: 550px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      margin-top: 100px;
   }
   
   body {
