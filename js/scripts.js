@@ -36,28 +36,28 @@ function resetSelections() {
 
 $(document).ready(function() {
 
-  $("#add-more-pizza").click(function() {
-    $("#pizza-order").append('<p>___________________________________</p>' +
-                              '<h2>Sizes</h2>' +
-                              '<div id="orderForm">' +
-                              '<select class="form-control pizza-size">' +
-                               '<option value="6">Small</option>' +
-                               '<option value="8">Medium</option>' +
-                               '<option value="10">Large</option>' +
-                               '</select>' +
-                               '<h2>Toppings</h2>' +
-                               '<div class="checkbox">' +
-                               '<label><input type="checkbox" name="toppings" value="1">pepperoni</label>' +
-                               '</div>' +
-                               '<div class="checkbox">' +
-                               '<label><input type="checkbox" name="toppings" value="1">sausage</label>' +
-                               '</div>' +
-                               '<div class="checkbox">' +
-                               '<label><input type="checkbox" name="toppings" value="1">garlic crust</label>' +
-                               '</div>' +
-                               '</div>'
-    );
-  });
+//   $("#add-more-pizza").click(function() {
+//     $("#pizza-order").append('<p>___________________________________</p>' +
+//                               '<h2>Sizes</h2>' +
+//                               '<div id="orderForm">' +
+//                               '<select class="form-control pizza-size">' +
+//                                '<option value="6">Small</option>' +
+//                                '<option value="8">Medium</option>' +
+//                                '<option value="10">Large</option>' +
+//                                '</select>' +
+//                                '<h2>Toppings</h2>' +
+//                                '<div class="checkbox">' +
+//                                '<label><input type="checkbox" name="toppings" value="1">pepperoni</label>' +
+//                                '</div>' +
+//                                '<div class="checkbox">' +
+//                                '<label><input type="checkbox" name="toppings" value="1">sausage</label>' +
+//                                '</div>' +
+//                                '<div class="checkbox">' +
+//                                '<label><input type="checkbox" name="toppings" value="1">garlic crust</label>' +
+//                                '</div>' +
+//                                '</div>'
+//     );
+//   });
 
   $("#orderForm").submit(function(event) {
     event.preventDefault();
@@ -89,6 +89,7 @@ $(document).ready(function() {
 
     $("#final-total").text("Your Total Order is $" + overallTotal);
     resetSelections();
-
   });
+//   prompt("Enter your location")
+alert("you have ordered" + getpizzaNumber() + " Total amount in dollars " + (overallTotal) + "" + "" )
 });
